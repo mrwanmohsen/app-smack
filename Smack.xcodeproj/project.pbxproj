@@ -15,6 +15,7 @@
 		A388E1A6221981D500B7A672 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A388E1A5221981D500B7A672 /* SWRevealViewController.m */; };
 		A388E1AB2219C8CE00B7A672 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A388E1AA2219C8CE00B7A672 /* ChannelVC.swift */; };
 		A388E1AD2219C8E800B7A672 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A388E1AC2219C8E800B7A672 /* ChatVC.swift */; };
+		A388E1AF221AFDAD00B7A672 /* GradiantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A388E1AE221AFDAC00B7A672 /* GradiantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A388E1A5221981D500B7A672 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A388E1AA2219C8CE00B7A672 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		A388E1AC2219C8E800B7A672 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		A388E1AE221AFDAC00B7A672 /* GradiantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantView.swift; sourceTree = "<group>"; };
 		BCDD3B122F931735951BCB4B /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D839CB9E7EC026B6B65B90EE /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		A388E1A82219C88E00B7A672 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A388E1AE221AFDAC00B7A672 /* GradiantView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A388E1AF221AFDAD00B7A672 /* GradiantView.swift in Sources */,
 				A388E1AD2219C8E800B7A672 /* ChatVC.swift in Sources */,
 				A388E1912218BEB600B7A672 /* AppDelegate.swift in Sources */,
 				A388E1AB2219C8CE00B7A672 /* ChannelVC.swift in Sources */,
