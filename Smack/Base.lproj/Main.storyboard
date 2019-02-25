@@ -211,7 +211,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfQ-g5-xKI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfQ-g5-xKI" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="276" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -221,6 +221,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPa-Fj-TCu">
                                 <rect key="frame" x="62" y="328" width="251" height="30"/>
@@ -356,6 +361,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAcntPressed:" destination="YWn-9S-EDb" eventType="touchUpInside" id="GEL-gF-YqN"/>
+                                    <action selector="pickAvatarPressed:" destination="QPi-NJ-cA0" eventType="touchUpInside" id="Qm0-WP-ZMb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuH-Cl-S5b">
@@ -365,9 +371,10 @@
                                 </state>
                                 <connections>
                                     <action selector="createAcntPressed:" destination="YWn-9S-EDb" eventType="touchUpInside" id="E4o-cL-axK"/>
+                                    <action selector="pickBGcolorPressed:" destination="QPi-NJ-cA0" eventType="touchUpInside" id="FDQ-Nq-ttG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O36-RH-L0F">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O36-RH-L0F" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -377,6 +384,14 @@
                                 <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="QPi-NJ-cA0" eventType="touchUpInside" id="NiH-r4-bHD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -400,6 +415,10 @@
                         <viewLayoutGuide key="safeArea" id="Izu-Oo-mSJ"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="RUe-xJ-5iE" id="xgg-TQ-SKb"/>
+                        <outlet property="passTxt" destination="JiJ-Z9-fmX" id="rS4-hV-KMm"/>
+                        <outlet property="userImg" destination="41h-dF-qq8" id="Le8-hv-FSg"/>
+                        <outlet property="usernameTxt" destination="IzY-ka-PIe" id="Q1m-y1-1Bn"/>
                         <segue destination="H84-YE-ihU" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="6JR-Hq-Ugj"/>
                     </connections>
                 </viewController>
