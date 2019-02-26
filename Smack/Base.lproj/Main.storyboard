@@ -437,7 +437,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRL-Jf-Qho">
-                                <rect key="frame" x="15" y="21" width="30" height="30"/>
+                                <rect key="frame" x="15" y="30" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1pW-x0-BFk"/>
                                     <constraint firstAttribute="height" constant="30" id="ff7-OS-1Vt"/>
@@ -448,7 +448,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KRP-Yh-Lpt">
-                                <rect key="frame" x="107.5" y="28" width="160" height="31"/>
+                                <rect key="frame" x="107.5" y="40" width="160" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="8hD-YZ-fkq"/>
                                     <constraint firstAttribute="width" constant="160" id="Q0u-p6-nEu"/>
@@ -462,7 +462,7 @@
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7V3-5E-8iP">
-                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="90" width="375" height="577"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Q3-vK-3vS">
                                     <size key="itemSize" width="100" height="100"/>
@@ -498,10 +498,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XRL-Jf-Qho" firstAttribute="top" secondItem="Vrs-vT-waN" secondAttribute="top" constant="1" id="HMb-xQ-UW9"/>
+                            <constraint firstItem="XRL-Jf-Qho" firstAttribute="top" secondItem="Vrs-vT-waN" secondAttribute="top" constant="10" id="HMb-xQ-UW9"/>
                             <constraint firstItem="Vrs-vT-waN" firstAttribute="bottom" secondItem="7V3-5E-8iP" secondAttribute="bottom" id="IYn-RX-uwW"/>
                             <constraint firstItem="7V3-5E-8iP" firstAttribute="top" secondItem="KRP-Yh-Lpt" secondAttribute="bottom" constant="20" id="Sqz-Bm-pey"/>
-                            <constraint firstItem="KRP-Yh-Lpt" firstAttribute="top" secondItem="Vrs-vT-waN" secondAttribute="top" constant="8" id="bZ4-g7-1Nn"/>
+                            <constraint firstItem="KRP-Yh-Lpt" firstAttribute="top" secondItem="Vrs-vT-waN" secondAttribute="top" constant="20" id="bZ4-g7-1Nn"/>
                             <constraint firstItem="7V3-5E-8iP" firstAttribute="leading" secondItem="Vrs-vT-waN" secondAttribute="leading" id="fHh-58-Ko4"/>
                             <constraint firstItem="XRL-Jf-Qho" firstAttribute="leading" secondItem="Vrs-vT-waN" secondAttribute="leading" constant="15" id="ia0-gp-VW3"/>
                             <constraint firstItem="KRP-Yh-Lpt" firstAttribute="centerX" secondItem="qgW-1f-3gu" secondAttribute="centerX" id="kav-op-hAq"/>
