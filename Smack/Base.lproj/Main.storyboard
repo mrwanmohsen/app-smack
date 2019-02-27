@@ -58,7 +58,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-Qg-Qid">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-Qg-Qid" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="27" y="566" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="OKw-C3-VeF"/>
@@ -128,6 +128,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="5la-Oa-u67" id="Qse-aL-rR6"/>
+                        <outlet property="userImg" destination="RrF-Qg-Qid" id="5LG-ju-UGZ"/>
                         <segue destination="YWn-9S-EDb" kind="show" identifier="toLogin" id="0xq-re-kxB"/>
                     </connections>
                 </viewController>
@@ -344,7 +345,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Mi8-ye-PDP">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Mi8-ye-PDP" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="301.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="km4-21-cFV"/>
@@ -394,6 +395,10 @@
                                     <action selector="createAccntPressed:" destination="QPi-NJ-cA0" eventType="touchUpInside" id="NiH-r4-bHD"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="a9F-BZ-Dec">
+                                <rect key="frame" x="169" y="255" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -401,6 +406,7 @@
                             <constraint firstItem="adB-ec-uIe" firstAttribute="top" secondItem="Izu-Oo-mSJ" secondAttribute="top" id="4DF-LO-hea"/>
                             <constraint firstItem="Mi8-ye-PDP" firstAttribute="top" secondItem="3bW-Gv-J9v" secondAttribute="bottom" constant="40" id="Bof-OV-yu9"/>
                             <constraint firstItem="MuH-Cl-S5b" firstAttribute="top" secondItem="41h-dF-qq8" secondAttribute="bottom" constant="4" id="C3H-LB-ig8"/>
+                            <constraint firstItem="a9F-BZ-Dec" firstAttribute="centerX" secondItem="vLd-f4-LZ6" secondAttribute="centerX" id="C5H-YW-ddR"/>
                             <constraint firstItem="O36-RH-L0F" firstAttribute="centerX" secondItem="vLd-f4-LZ6" secondAttribute="centerX" id="EKb-9G-S8C"/>
                             <constraint firstItem="3bW-Gv-J9v" firstAttribute="top" secondItem="3W8-ee-BTT" secondAttribute="bottom" constant="40" id="EjA-rh-Tm3"/>
                             <constraint firstItem="Izu-Oo-mSJ" firstAttribute="trailing" secondItem="adB-ec-uIe" secondAttribute="trailing" constant="16" id="PpG-rQ-y7f"/>
@@ -412,12 +418,14 @@
                             <constraint firstItem="MuH-Cl-S5b" firstAttribute="centerX" secondItem="vLd-f4-LZ6" secondAttribute="centerX" id="mcj-LC-0Ts"/>
                             <constraint firstItem="41h-dF-qq8" firstAttribute="top" secondItem="Mi8-ye-PDP" secondAttribute="top" id="qvW-an-fUH"/>
                             <constraint firstItem="41h-dF-qq8" firstAttribute="width" secondItem="Mi8-ye-PDP" secondAttribute="width" id="rI5-Si-MZZ"/>
+                            <constraint firstItem="a9F-BZ-Dec" firstAttribute="centerY" secondItem="vLd-f4-LZ6" secondAttribute="centerY" constant="-60" id="t2V-5B-pQz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Izu-Oo-mSJ"/>
                     </view>
                     <connections>
                         <outlet property="emailTxt" destination="RUe-xJ-5iE" id="xgg-TQ-SKb"/>
                         <outlet property="passTxt" destination="JiJ-Z9-fmX" id="rS4-hV-KMm"/>
+                        <outlet property="spinner" destination="a9F-BZ-Dec" id="Dkb-e6-L7I"/>
                         <outlet property="userImg" destination="41h-dF-qq8" id="Le8-hv-FSg"/>
                         <outlet property="usernameTxt" destination="IzY-ka-PIe" id="Q1m-y1-1Bn"/>
                         <segue destination="H84-YE-ihU" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="6JR-Hq-Ugj"/>
